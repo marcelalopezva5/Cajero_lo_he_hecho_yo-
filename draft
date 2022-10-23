@@ -5,19 +5,29 @@ def cajero():
     while(seguir==True):
         dinero=int(input("Dime cuanto dinero: "))
         dinero_sacar=int(input("Cuanto dinero quieres sacar: "))
-        if(dinero<=0 or dinero>=4):
-           print("Imposible, multiplos mayores de 5")
-           seguir=True
+        if(dinero_sacar>dinero):
+             print("Te quedas en numeros rojos chaval, imposible")
+             seguir=True
         else:
             seguir=False
             if(dinero>=5):
               print("Posible, te queda:")
-              seguir=False
+              seguir=True
             else:
                 seguir=False
                 if(dinero_sacar>dinero):
                      print("Te quedas en numeros rojos chaval, imposible")
-                     seguir=False
-    Restante=(dinero-dinero_sacar)
-        
+                     seguir=True
+                else:
+                    if(dinero<5):
+                      print("No existen billetes de esa cantidad")
+                
+                    
+            
+        Restante=int(input(dinero-dinero_sacar))  
 cajero()
+
+Dime cuanto dinero: 200
+Cuanto dinero quieres sacar: 201
+Te quedas en numeros rojos chaval, imposible
+-1
