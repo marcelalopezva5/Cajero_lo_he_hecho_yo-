@@ -6,7 +6,7 @@ def cajero():
         dinero=int(input("Dime cuanto dinero: "))
         dinero_sacar=int(input("Cuanto dinero quieres sacar: "))
         if(dinero_sacar>dinero):
-             print("Te quedas en numeros rojos chaval, imposible")
+             print("Pero tu eres tonto?, sabes restar? , imposible")
              seguir=True
         else:
             seguir=False
@@ -14,20 +14,23 @@ def cajero():
               print("Posible, te queda:")
               seguir=True
             else:
-                seguir=False
-                if(dinero_sacar>dinero):
-                     print("Te quedas en numeros rojos chaval, imposible")
-                     seguir=True
-                else:
-                    if(dinero<5):
-                      print("No existen billetes de esa cantidad")
+                 if(dinero<5):
+                  print("No existen billetes de esa cantidad")
                 
                     
             
         Restante=int(input(dinero-dinero_sacar))  
 cajero()
 
-Dime cuanto dinero: 200
-Cuanto dinero quieres sacar: 201
-Te quedas en numeros rojos chaval, imposible
--1
+Dime cuanto dinero: 500
+Cuanto dinero quieres sacar: 20
+Posible, te queda:
+480
+Dime cuanto dinero: 300
+Cuanto dinero quieres sacar: 400
+Pero tu eres tonto?, sabes restar? , imposible
+-100
+Dime cuanto dinero: 40
+Cuanto dinero quieres sacar: 300
+Pero tu eres tonto?,🤡 sabes restar? , imposible
+-260
